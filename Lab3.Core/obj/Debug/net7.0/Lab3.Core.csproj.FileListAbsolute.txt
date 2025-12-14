@@ -1,0 +1,11 @@
+/Users/hiroshima/Lab33/Lab3.Core/obj/Debug/net7.0/Lab3.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hiroshima/Lab33/Lab3.Core/obj/Debug/net7.0/Lab3.Core.AssemblyInfoInputs.cache
+/Users/hiroshima/Lab33/Lab3.Core/obj/Debug/net7.0/Lab3.Core.AssemblyInfo.cs
+/Users/hiroshima/Lab33/Lab3.Core/obj/Debug/net7.0/Lab3.Core.csproj.CoreCompileInputs.cache
+/Users/hiroshima/Lab33/Lab3.Core/bin/Debug/net7.0/Lab3.Core.deps.json
+/Users/hiroshima/Lab33/Lab3.Core/bin/Debug/net7.0/Lab3.Core.dll
+/Users/hiroshima/Lab33/Lab3.Core/bin/Debug/net7.0/Lab3.Core.pdb
+/Users/hiroshima/Lab33/Lab3.Core/obj/Debug/net7.0/Lab3.Core.dll
+/Users/hiroshima/Lab33/Lab3.Core/obj/Debug/net7.0/refint/Lab3.Core.dll
+/Users/hiroshima/Lab33/Lab3.Core/obj/Debug/net7.0/Lab3.Core.pdb
+/Users/hiroshima/Lab33/Lab3.Core/obj/Debug/net7.0/ref/Lab3.Core.dll
