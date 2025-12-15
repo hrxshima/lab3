@@ -9,15 +9,17 @@ class Program
     static void Main()
     {
         var order = OrderFactory.Create();
-        
+
         order.Items.Add(new MenuItem("бургер", 100));
         order.Items.Add(new MenuItem("картошка фри", 50));
 
-        IPricingStrategy strategy = new SimplePricingStrategy();
-        Console.WriteLine(strategy.CalculatePrice(order.Items));
+        IPricingStrategy baseStrategy = new SimplePricingStrategy();
 
-        var observer = new ConsoleObserver();
-        order.Notifier.Attach(observer);
+        IPricingStrategy pricingWithDelivery =
+             new DeliveryFeeDecorator(baseStrategy, 30);
+
+        var total = pricingWithDelivery.CalculatePrice(order.Items);
+        Console.WriteLine(total);
 
         order.ChangeState(new DeliveringState());
         order.ChangeState(new CompletedState());
