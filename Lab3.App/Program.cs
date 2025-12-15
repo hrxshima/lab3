@@ -21,7 +21,13 @@ class Program
         var total = pricingWithDelivery.CalculatePrice(order.Items);
         Console.WriteLine(total);
 
+        var notifier = new OrderStatusNotifier();
+        notifier.Attach(new ConsoleObserver()); 
+
         order.ChangeState(new DeliveringState());
+        notifier.Notify(order); 
+
         order.ChangeState(new CompletedState());
+        notifier.Notify(order);
     }
 }
